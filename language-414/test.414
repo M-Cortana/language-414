@@ -1,0 +1,16 @@
+a = 123
+# Main if
+if a < 12:
+# Main if Condition end
+        b += 1
+        #First sub if
+        if b <= 12:
+                c = 1123
+        else:
+                c = 123
+        #Second sub if
+        if b > 12:
+                c = 12
+else:
+        a = 0
+e = 12

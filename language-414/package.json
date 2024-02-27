@@ -1,0 +1,25 @@
+{
+  "name": "language-414",
+  "displayName": "Language 414",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.86.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "414",
+      "aliases": ["414", "414"],
+      "extensions": [".414"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "414",
+      "scopeName": "source.414",
+      "path": "./syntaxes/414.tmLanguage.json"
+    }]
+  }
+}

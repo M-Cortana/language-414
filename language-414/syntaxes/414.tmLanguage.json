@@ -1,0 +1,47 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "414",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+                {
+                        "include": "#variables"
+                },
+                {
+                        "include": "#number"
+                },
+                {
+                        "include": "#object"
+                },
+                {
+                        "include": "#comments"
+                }
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.flow.python",
+				"match": "(if|while|break|continue|else|assign|and|or)"
+			}]
+		},
+                "comments": {
+			"patterns": [
+				{
+					"name": "comment.line.number-sign.python",
+					"contentName": "meta.typehint.comment.python",
+					"begin": "^\\s*#",
+					"end": "$"
+                                }
+			]
+		},
+                "number": {
+			"name": "constant.numeric.python",
+                        "match": "[0-9]+"
+		}
+	},
+	"scopeName": "source.414"
+}

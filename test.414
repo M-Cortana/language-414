@@ -1,0 +1,10 @@
+assign SrcArray = reg(x8)
+assign TarArray = reg(x9)
+
+i = 0
+
+while i <= 12:
+        TarArray[i] = SrcArray[i] * SrcArray[i]
+        i += 4
+        if i == 5:
+                continue
